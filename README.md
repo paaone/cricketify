@@ -26,3 +26,25 @@ into a minimal Express backend and a Vite powered React frontend.
 
 The frontend will run on <http://localhost:5173> and proxy API requests to the
 backend on port `3001`.
+
+### Google Authentication
+
+The backend uses Google OAuth for user authentication. Create a `.env` file in
+the `backend` directory with the following variables:
+
+```bash
+GOOGLE_CLIENT_ID=your-google-client-id
+GOOGLE_CLIENT_SECRET=your-google-client-secret
+```
+
+You can obtain these from the Google Developer Console.
+
+### Windows Convenience Script
+
+For Windows users running Git Bash or WSL, a helper script `run_windows.sh` is
+provided in the project root. It installs dependencies and starts both the
+backend and frontend:
+
+```bash
+./run_windows.sh
+```
