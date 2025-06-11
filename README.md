@@ -27,17 +27,21 @@ into a minimal Express backend and a Vite powered React frontend.
 The frontend will run on <http://localhost:5173> and proxy API requests to the
 backend on port `3001`.
 
-### Google Authentication
+### SSO Authentication
 
-The backend uses Google OAuth for user authentication. Create a `.env` file in
-the `backend` directory with the following variables:
+The backend relies entirely on Google and Facebook OAuth for authentication and
+initial user profile creation. Create a `.env` file in the `backend` directory
+with the following variables:
 
 ```bash
 GOOGLE_CLIENT_ID=your-google-client-id
 GOOGLE_CLIENT_SECRET=your-google-client-secret
+FACEBOOK_CLIENT_ID=your-facebook-client-id
+FACEBOOK_CLIENT_SECRET=your-facebook-client-secret
 ```
 
-You can obtain these from the Google Developer Console.
+You can obtain these from the Google Developer Console and Facebook Developer
+portal.
 
 ### Windows Convenience Script
 
